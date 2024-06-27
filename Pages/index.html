@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de calculo IMC</title>
+    <meta name="description" content="Tabala de Caluclo do Imc para homem e mulher">
+    <link rel="stylesheet" href="/Design/reset.css">
+    <link rel="stylesheet" href="/Design/style.css">
+    <link rel="stylesheet" href="/Design/maxWidth500px.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/img/WhatsApp_Image_2023-01-04_at_22.17.13-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+   
+<header>
+
+    <h1>Calculadora IMC</h1>  
+    <div class="AjusteMenuMobile">
+    <nav class="nav_container">
+        <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="#home" class="active"></a>
+    <div id="myLinks">
+      <a href="https://www.spartanosuplementos.com.br">Loja</a>
+      <a href="https://www.saude.rj.gov.br/obesidade/noticias/
+            2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude#:~:text=Criado%
+            20no%20s%C3%A9culo%2019%20pelo,abaixo%20ou%20acima%20do%20peso.">O que é o IMC ? </a>
+      <a href="http://spartano.blog/2023/08/04/em-quanto-tempo-uma-dieta-comeca-realmente-fazer-efeito/">Como emagrecer </a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="MenuMobile()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+</div>
+        <ul class="cabecalho__container">
+            <a  target="_blank" href="https://www.saude.rj.gov.br/obesidade/noticias/
+            2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude#:~:text=Criado%
+            20no%20s%C3%A9culo%2019%20pelo,abaixo%20ou%20acima%20do%20peso."><li class="bordaDif">O que é o IMC ? </li></a>
+           <a target="_blank" href="https://www.spartanosuplementos.com.br"><li>Loja</li></a> 
+            <a target="_blank" href="http://spartano.blog/2023/08/04/em-quanto-tempo-uma-dieta-comeca-realmente-fazer-efeito/"><li>Como emagrecer </li></a>
+        </ul>
+      
+    </nav>
+    <a href=""></a>
+</header>
+<div class="banner">
+    <img class="bannerPincipal" src="/img/obesidade.jpg" alt="banner"></div>
+    <article>
+<h2>O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).</h2>
+<span>IMC = Peso ÷ (Altura × Altura)</span> <br> <br>  
+<h2>Exemplo de como calcular o IMC:</h2>
+<span>IMC = 80 kg ÷ (1,80 m × 1,80 m) = 24,69 kg/m2 (Peso ideal)</span> <br> <br>
+<h2 >Utilize a calculadora abaixo para fazer o seu cálculo:</h2>
+
+
+</div>
+
+<div class="espacoCalculadora">
+<div class="calculadora" data-calculadora>
+    
+<h1>Calculadora</h1>
+<label for="">infome seu peso(KG)</label>
+<div class="mensagemErro" id="mensagemErroPeso"></div>
+<input maxlength="3" id="peso" data-peso placeholder="Qual seu peso" type="text">
+<label for="">Informe sua Altura(metro e cm)</label> 
+<div class="mensagemErro" id="mensagemErroAltura"></div>
+<input maxlength="3" id="altura" data-altura placeholder="Qual sua Altura" type="text"> 
+<button type="submit" id="button" data-calcular>Calcular</button>
+<br>
+<span id="resultadoDoImc"></span><span id="classificação"></span>
+</div>
+</div>
+</div>
+
+</article>
+    
+<footer>
+    <p class="paragra">Desenvolvido por Spartano Suplementos </p>
+   
+    <div class="logoRedesSociais">
+        <ul class="alinharRedes"> 
+        <li class="redesdociais"><a target="_blank" href="https://www.instagram.com/spartano_suplementos/"><img src="/img/instagram-colorido.png" alt="logoInstagram"></a></li>
+        <li class="redesdociais"><a target="_blank" href="https://www.tiktok.com/@spartano_suplementos"><img src="/img/tiktok-colorido.png" alt="LogoTikTok"></a></li>
+    </ul></div>
+
+
+</footer>
+<script defer src="/App/main.js"></script>
+<script defer src="/App/validacoes.js"></script>
+</body>
+</html>
